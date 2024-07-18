@@ -1,1 +1,3 @@
-# My personal API that some of my projects use.
+# The best QR managing app.
+
+https://betterqr.app
