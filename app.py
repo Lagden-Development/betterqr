@@ -136,7 +136,7 @@ def ensure_session():
     # Check if the session is more than 30 days old
     for session_data in query["sessions"]:
         if session_data["sid"] == session["sid"]:
-            session_start = datetime.datetime.fromisoformat(session_data["created_at"])
+            session_start = session_data["created_at"]
             if (datetime.datetime.now() - session_start).days >= 30:
                 session.pop("sid")
                 flash("Your session has expired. Please log in again.", "warning")
