@@ -1,0 +1,90 @@
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.65rem;
+}
+
+.logo {
+  flex-shrink: 0;
+  width: 200px;
+  height: auto;
+}
+
+.logo img {
+  display: block;
+}
+
+.logo img.light-mode {
+  display: none;
+}
+
+.dark .logo img.light-mode {
+  display: block;
+}
+
+.logo img.dark-mode {
+  display: block;
+}
+
+.dark .logo img.dark-mode {
+  display: none;
+}
+
+.dark hr {
+  display: none;
+}
+
+.links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.theme-toggle {
+  margin-left: auto;
+}
+
+header {
+  background-image: url("https://static.betterqr.app/assets/header-blobs-light.svg");
+  background-size: cover;
+}
+
+.dark header {
+  background-image: url("https://static.betterqr.app/assets/header-blobs-dark.svg");
+}
+
+footer {
+  padding: 1.5rem 0;
+  background-color: #1a202c;
+  color: white;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-right {
+  justify-content: flex-end;
+}
+
+.footer-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-center a {
+  margin: 0 0.5rem;
+}

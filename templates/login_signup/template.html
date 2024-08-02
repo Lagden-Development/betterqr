@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <!-- Primary Meta Tags -->
+    <meta
+      name="title"
+      content="Better QR - The Best and Affordable QR Code Solution"
+    />
+    <meta
+      name="description"
+      content="Discover Better QR, a modern and user-friendly platform for generating high-quality, customizable, and affordable QR codes. Perfect for businesses and individuals, Better QR offers advanced features, custom branding, and detailed analytics to meet all your QR code needs. Start now and experience the difference."
+    />
+    <meta
+      name="keywords"
+      content="Better QR, QR code generator, high-quality QR codes, customizable QR codes, affordable QR codes, QR code analytics, QR code branding, QR code solutions, generate QR codes, QR code platform"
+    />
+    <!-- End Primary Meta Tags -->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:url" content="https://betterqr.app/" />
+    <meta
+      property="og:title"
+      content="Better QR - The Best and Affordable QR Code Solution"
+    />
+    <meta
+      property="og:description"
+      content="Discover Better QR, a modern and user-friendly platform for generating high-quality, customizable, and affordable QR codes. Perfect for businesses and individuals, Better QR offers advanced features, custom branding, and detailed analytics to meet all your QR code needs. Start now and experience the difference."
+    />
+    <meta
+      property="og:image"
+      content="https://static.betterqr.app/logos/betterqr-banner-logo.png"
+    />
+    <!-- End Open Graph / Facebook -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://betterqr.app/" />
+    <meta
+      property="twitter:title"
+      content="Better QR - The Best and Affordable QR Code Solution"
+    />
+    <meta
+      property="twitter:description"
+      content="Discover Better QR, a modern and user-friendly platform for generating high-quality, customizable, and affordable QR codes. Perfect for businesses and individuals, Better QR offers advanced features, custom branding, and detailed analytics to meet all your QR code needs. Start now and experience the difference."
+    />
+    <meta
+      property="twitter:image"
+      content="https://static.betterqr.app/logos/betterqr-banner-logo.png"
+    />
+    <!-- End Twitter -->
+
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#3B82F6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="author" content="Lagden Development" />
+    <!-- End Additional Meta Tags -->
+
+    <!-- Title -->
+    <title>{% block title %}{% endblock %} - Better QR</title>
+    <!-- End Title -->
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://static.betterqr.app/logos/betterqr-favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- End Favicon -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/static/css/tailwind.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.css"
+      integrity="sha512-oe8OpYjBaDWPt2VmSFR+qYOdnTjeV9QPLJUeqZyprDEQvQLJ9C5PCFclxwNuvb/GQgQngdCXzKSFltuHD3eCxA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- End Styles -->
+
+    <!-- Scripts -->
+    <script src="/static/js/theme.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"
+      integrity="sha512-YUkaLm+KJ5lQXDBdqBqk7EVhJAdxRnVdT2vtCzwPHSweCzyMgYV/tgGF4/dCyqtCC2eCphz0lRQgatGVdfR0ww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"
+      integrity="sha512-lbwH47l/tPXJYG9AcFNoJaTMhGvYWhVM9YI43CT+uteTRRaiLCui8snIgyAN8XWgNjNhCqlAUdzZptso6OCoFQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://www.google.com/recaptcha/api.js?render={{ recaptcha_site_key }}"></script>
+    <!-- End Scripts -->
+
+    <style>
+      body {
+        background-image: url("https://static.betterqr.app/assets/betterqr-bg-light.svg");
+        background-position: center;
+        background-size: cover;
+      }
+
+      .dark body {
+        background-image: url("https://static.betterqr.app/assets/betterqr-bg-dark.svg");
+      }
+
+      .dark input {
+        background-color: #2d3748; /* Darker background for dark mode */
+        color: #e2e8f0; /* Lighter text color for dark mode */
+      }
+
+      .google_msg a {
+        color: #3b82f6;
+        text-decoration: underline;
+      }
+    </style>
+    {% block extra_head %}{% endblock %}
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-EBR74MK4MZ"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-EBR74MK4MZ");
+  </script>
+  <!-- End Google tag (gtag.js) -->
+  <body
+    class="bg-gray-100 dark:bg-gray-900 flex items-center justify-center h-screen text-gray-900 dark:text-gray-100"
+  >
+    <div class="relative w-full max-w-md">
+      <div class="absolute top-4 left-4">
+        <a href="/" class="text-2xl"><i class="fas fa-arrow-left"></i></a>
+      </div>
+      <div class="absolute top-4 right-4 theme-toggle">
+        <button class="text-2xl"><i class="fas fa-moon"></i></button>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+    {% block formscript %}{% endblock %}
+    <script type="text/javascript">
+      var messages = {{ get_flashed_messages(with_categories=true) | tojson }};
+      function displayMessages(messages) {
+        messages.forEach(function (message) {
+          var category = message[0];
+          var text = message[1];
+          switch (category) {
+            case 'success':
+              toastr.success(text);
+              break;
+            case 'info':
+              toastr.info(text);
+              break;
+            case 'warning':
+              toastr.warning(text);
+              break;
+            case 'danger':
+            case 'error':
+              toastr.error(text);
+              break;
+            default:
+              toastr.info(text);
+              break;
+          }
+        });
+      }
+      displayMessages(messages);
+    </script>
+  </body>
+</html>
