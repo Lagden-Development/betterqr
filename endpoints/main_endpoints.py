@@ -19,7 +19,7 @@ from forms.login import LoginForm
 from forms.signup import SignupForm
 
 # Database
-from db import users_collection
+from helpers.db import users_collection
 
 # Create a Blueprint for main routes
 blueprint = Blueprint("main", __name__, url_prefix="/")

@@ -18,7 +18,7 @@ import requests
 from flask import Blueprint, jsonify, session, request
 
 # Database Modules
-from db import users_collection
+from helpers.db import users_collection
 
 # Forms
 from forms.login import LoginForm

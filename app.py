@@ -22,7 +22,7 @@ from flask_session import Session
 from flask_minify import Minify
 
 # Database
-from db import client as db_client, users_collection
+from helpers.db import client as db_client, users_collection
 
 # Endpoints
 from endpoints import main_endpoints

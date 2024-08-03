@@ -14,7 +14,7 @@ from pymongo.server_api import ServerApi
 from dotenv import load_dotenv
 
 # Import the custom logger and setup function
-from logger import QRLOG_DB, setup_betterqr_logging
+from helpers.logger import QRLOG_DB, setup_betterqr_logging
 
 # Load the environment variables
 load_dotenv()
